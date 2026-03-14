@@ -1,0 +1,78 @@
+# Build artifacts
+*.o
+*.a
+*.lo
+*.la
+
+# Compiled binaries
+gcal
+gcal.out
+tcal
+gcal2txt
+txt2gcal
+src/gcal
+src/gcal2txt
+src/tcal
+src/txt2gcal
+misc/gcalltx/gcalltxp
+
+# configure-generated files
+config.h
+config.log
+config.status
+stamp-h1
+install-inf
+doc/mksamp
+
+# Generated Makefiles (from ./configure)
+Makefile
+lib/Makefile
+src/Makefile
+data/Makefile
+misc/Makefile
+doc/Makefile
+doc/en/Makefile
+doc/en/examples/Makefile
+po/Makefile
+po/Makefile.in
+po/POTFILES
+
+# Dependency tracking dirs (.Po files live here)
+.deps/
+**/.deps/
+lib/glthread/.dirstamp
+
+# Generated lib headers (from gnulib)
+lib/alloca.h
+lib/arg-nonnull.h
+lib/c++defs.h
+lib/charset.alias
+lib/configmake.h
+lib/fcntl.h
+lib/langinfo.h
+lib/limits.h
+lib/locale.h
+lib/math.h
+lib/sched.h
+lib/signal.h
+lib/spawn.h
+lib/stdint.h
+lib/stdio.h
+lib/stdlib.h
+lib/string.h
+lib/strings.h
+lib/unistd.h
+lib/unused-parameter.h
+lib/warn-on-use.h
+lib/wchar.h
+lib/wctype.h
+lib/ref-add.sed
+lib/ref-del.sed
+lib/sys/
+
+# libgnu archive
+lib/libgnu.a
+
+# Claude Code
+.claude/
+CLAUDE.md
