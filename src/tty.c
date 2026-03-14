@@ -39,7 +39,7 @@
 # if defined(UNIX) && !defined(DJG)
 #  if HAVE_TERMIOS_H && HAVE_TERMIOS_FUNCS
 #   include <termios.h>
-#   if HAVE_SYS_IOCTL_H && !defined(TIOCGWINSZ)
+#   if HAVE_SYS_IOCTL_H
 #    include <sys/ioctl.h>
 #   endif
 #  else	/* !HAVE_TERMIOS_H || !HAVE_TERMIOS_FUNCS */
