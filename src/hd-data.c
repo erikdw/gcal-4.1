@@ -1015,7 +1015,8 @@ const Ht_struct hd_text[] = {
   {HD_WHITSUN_EVE, N_("Whitsun Eve")},
   {HD_W_TUBMANS_BIRTHDAY, N_("W. Tubman's Birthday")},
   {HD_YAP_DAY, N_("Yap Day")},
-  {HD_DAY_OF_CZECH_STATEHOOD, N_("Day of Czech Statehood")}
+  {HD_DAY_OF_CZECH_STATEHOOD, N_("Day of Czech Statehood")},
+  {HD_JUNETEENTH_DAY, N_("Juneteenth Day")}
 #endif	/* !HD_TOP20CC */
 };
 

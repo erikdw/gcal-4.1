@@ -2055,6 +2055,39 @@ us_hdy (init_data, detected, easter, year, hd_elems, fday, count)
     }
   holiday (*init_data, detected, _(hd_text[HD_INDEPENDENCE_DAY].ht_text),
 	   ptr_cc_id, "+", day, month, year, hd_elems, fday, count);
+#if !HD_TOP20CC
+  if (year > 2020)
+    {
+      day = 19;
+      month = 6;
+      switch (observe_us_hdy)
+	{
+	case SASA_SUSU:
+	  break;
+	case SASA_SUMO:
+	case SASAFR_SUMO:
+	  if (weekday_of_date (day, month, year) == DAY_MAX)
+	    day++;
+	  break;
+	case SAMO_SUMO:
+	  i = weekday_of_date (day, month, year);
+	  if (i > 5)
+	    day += ((DAY_MAX - i) + 1);
+	  break;
+	case SAFR_SUMO:
+	  i = weekday_of_date (day, month, year);
+	  if (i == DAY_MAX)
+	    day++;
+	  else if (i == 6)
+	    day--;
+	  break;
+	default:
+	  abort ();		/* Error, invalid case. */
+	}
+      holiday (*init_data, detected, _(hd_text[HD_JUNETEENTH_DAY].ht_text),
+	       ptr_cc_id, "+", day, month, year, hd_elems, fday, count);
+    }
+#endif /* !HD_TOP20CC */
   day = DAY_MIN;
   month = MONTH_MIN;
   switch (observe_us_hdy)
