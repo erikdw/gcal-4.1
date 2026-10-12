@@ -6,6 +6,15 @@
 > ```
 > brew install erikdw/gcal/gcal
 > ```
+>
+> Installing it by its full name like this trusts the formula
+> automatically. If you install it from a Brewfile instead, run this once so
+> `brew bundle` and `brew upgrade` will install and update it (Homebrew
+> skips formulae from untrusted taps):
+>
+> ```
+> brew trust --formula erikdw/gcal/gcal
+> ```
 
 This is a fork of [GNU Gcal 4.1](https://www.gnu.org/software/gcal/), the GNU
 Gregorian calendar program, which is no longer maintained upstream (last
